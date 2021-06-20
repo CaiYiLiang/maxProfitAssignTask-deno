@@ -59,7 +59,7 @@ export const carServiceAssigner = (
   cars: Array<ICar>,
   employees: Array<IEmployee>
 ) => {
-  if (cars.length > 0) {
+  if (cars.length > 0 && employees.length > 0) {
     const allCarsBillStatement = getAllCarsBillStatement(cars);
     const sortedCarsBillStatement = allCarsBillStatement.sort(
       (carA, carB) => carA.price - carB.price
