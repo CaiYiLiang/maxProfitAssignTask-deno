@@ -20,6 +20,6 @@ export interface IEmployee {
 
 export interface ICarBillStatement extends ICar {
   employee?: Employee;
-  fuelAdded?: number;
-  price?: number;
+  fuelAdded: number;
+  price: number;
 }
